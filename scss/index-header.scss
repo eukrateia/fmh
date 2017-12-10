@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.index-ui-back {
+  min-height:400px;
+}
+.block-parallax-1 {
+    overflow: hidden;
+    position: relative;
+}
+.block-parallax-1 .parallax-bg {
+    background-image: url('/images/beautiful-sunset-over-the-yellow-rapeseed-field-picjumbo-com-wide.jpg');
+    background-position: bottom left;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.block-parallax-1 .md-box {
+    //padding: 200px 0 200px;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+    height: 100%;
+    min-height: 380px;
+    text-align: left;
+    padding-left: 42px;
+}
+.block-parallax-1 .md-box h1 {
+    color: #fff;
+}
+
+.block-parallax-2 .parallax-bg {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_z73DvFVC1ek9ZsGdCpvpDW_AwRqOWgG6IP2wOXrVibxz_EDV');
+}
+
+
+
+h2 {
+    color: #555;
+    text-align: center;
+    padding: 25px 0;
+    margin: 0;
+}

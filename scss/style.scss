@@ -1,0 +1,16 @@
+//@import "css-calc-mixin";
+@import "font-awesome";
+@import "color-palette";
+@import "layout";
+@import "index-header";
+@import "home";
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+@media print {
+  .navBar {
+    display: none;
+  }
+  iframe {
+    body,html{ height: 100%; }
+  }
+}

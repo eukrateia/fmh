@@ -1,0 +1,16 @@
+{
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": true,
+  "hostname": "10.0.0.59",
+  "port": "22",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "david",
+  "watch": [],
+  "transport": "ftp",
+  "target": "/home/david/code/enkara/",
+  "password": "Another1one"
+}
