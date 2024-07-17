@@ -6,7 +6,11 @@ var printPre = {
     var objArr = [];
 
     $('input').each(function() {
-      var obj = null;
+      var obj ={
+        inType: $(this).attr('type'),
+        id: $(this).attr('id') ? $(this).attr('id') : '',
+        name: $(this).attr('name') ? $(this).attr('name') : '',
+      }
       var inType = $(this).attr('type');
       switch(inType) {
         case 'text':
@@ -15,22 +19,12 @@ var printPre = {
         case 'month':
         case 'number':
         case 'tel':
-          obj = {
-            inType: $(this).attr('type'),
-            id: $(this).attr('id') ? $(this).attr('id') : '',
-            name: $(this).attr('name') ? $(this).attr('name') : '',
-            value: $(this).val() ? $(this).val() : ''
-          }
+          obj.value: $(this).val() ? $(this).val() : '';
           break;
         case 'radio':
         case 'checkbox':
           var inName = $(this).attr('name');
-          obj = {
-            inType: $(this).attr('type'),
-            id: $(this).attr('id') ? $(this).attr('id') : '',
-            name: $(this).attr('name') ? $(this).attr('name') : '',
-            value: $('input[name=' + inName + ']:checked').val() ? $('input[name=' + inName + ']:checked').val() : ''
-          }
+          obj.value: $('input[name=' + inName + ']:checked').val() ? $('input[name=' + inName + ']:checked').val() : '';
           break;
         default:
           break;
@@ -39,7 +33,5 @@ var printPre = {
         objArr.push(obj);
       }
     });
-    console.log('*********** objArr ***********');
-    console.log(objArr);
   }
 }
